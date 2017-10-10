@@ -1,0 +1,14 @@
+{
+	"type": "object",
+	"properties": [
+		"name": {
+			"$ref": "string-anglo_name.schema.json",
+		},
+		"age": {
+			"type": "numeric",
+			"min": 0,
+			"interval": 1,
+		}
+	],
+	"required": ["name"]
+}

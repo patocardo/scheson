@@ -1,0 +1,14 @@
+{
+	"type": "object",
+	"properties": [
+		"name": {
+			"type": "string",
+		},
+		"age": {
+			"type": "numeric",
+			"min": 0,
+			"interval": 1,
+		}
+	],
+	"required": ["name"]
+}

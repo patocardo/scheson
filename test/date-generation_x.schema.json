@@ -1,0 +1,6 @@
+{
+	"type": "date-time",
+	"precision": "day", 
+	"from": "1965-01-01",
+	"to": "1983-12-12"
+}

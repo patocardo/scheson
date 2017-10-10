@@ -1,0 +1,15 @@
+{
+	"id": "two-properties",
+	"type": "object",
+	"properties": {
+		"name": {
+			"type": "string"
+		},
+		"age": {
+			"type": "number",
+			"minimum": 0,
+			"multipleOf": 1
+		}
+	},
+	"required": ["name"]
+}

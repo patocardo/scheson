@@ -1,0 +1,6 @@
+{
+	"type": "array",
+	"items": {
+		"$ref": "string-anglo_name.schema.json"
+	}
+}

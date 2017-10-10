@@ -1,0 +1,18 @@
+{
+	"type": "array",
+	"items": [
+		{
+			"type": "string",
+			"minLength": 4
+		},
+		{
+			"type": "string",
+			"maxLength": 48
+		},
+		{
+			"type": "number",
+			"minLength": 4
+		}
+	],
+	"additionalItems": true
+}

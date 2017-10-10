@@ -1,0 +1,966 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"f",
+				"failures"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"witn",
+				"witness"
+			],
+			[
+				"has",
+				"hasOwnProperty"
+			],
+			[
+				"child",
+				"childObj"
+			],
+			[
+				"get",
+				"getRtrn"
+			],
+			[
+				"to",
+				"toLowerCase"
+			],
+			[
+				"p",
+				"propName"
+			],
+			[
+				"ty",
+				"typeName"
+			],
+			[
+				"min",
+				"minItems"
+			],
+			[
+				"fro",
+				"fromProps"
+			],
+			[
+				"pr",
+				"properties"
+			],
+			[
+				"mult",
+				"multipleOf"
+			],
+			[
+				"ex",
+				"exclusiveMaximum"
+			],
+			[
+				"m",
+				"maximum"
+			],
+			[
+				"add",
+				"addSuperSchema"
+			],
+			[
+				"super",
+				"superSchema"
+			],
+			[
+				"su",
+				"superschema"
+			],
+			[
+				"pa",
+				"patterns"
+			],
+			[
+				"string",
+				"stringify"
+			],
+			[
+				"i",
+				"isArray"
+			],
+			[
+				"all",
+				"allCollection"
+			],
+			[
+				"type",
+				"typeof"
+			],
+			[
+				"va",
+				"validateReq"
+			],
+			[
+				"Quote",
+				"QuotesService\talias"
+			],
+			[
+				"quo",
+				"quotesService\tproperty"
+			],
+			[
+				"Quot",
+				"QuotesService\talias"
+			],
+			[
+				"Q",
+				"QuotesService\talias"
+			],
+			[
+				"Al",
+				"AlertController\talias"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"ion",
+				"ion-col\tcol"
+			],
+			[
+				"Na",
+				"NavParams\talias"
+			],
+			[
+				"quote",
+				"quote.interface\tscript"
+			],
+			[
+				"Sett",
+				"SettingsPage\talias"
+			],
+			[
+				"Qu",
+				"QuotesPage\talias"
+			],
+			[
+				"set",
+				"setTimeout\tfunction"
+			],
+			[
+				"pop",
+				"popToRoot\tmethod"
+			],
+			[
+				"nav",
+				"navParams\tproperty"
+			],
+			[
+				"Nav",
+				"NavController\talias"
+			],
+			[
+				"na",
+				"NavParams\tproperty"
+			],
+			[
+				"On",
+				"OnInit\talias"
+			],
+			[
+				"for",
+				"forEach"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"t",
+				"type"
+			],
+			[
+				"speci",
+				"specialTypes"
+			],
+			[
+				"json",
+				"jsonWalk"
+			],
+			[
+				"curent",
+				"current_element"
+			],
+			[
+				"curr",
+				"current_element"
+			],
+			[
+				"curre",
+				"current_element"
+			],
+			[
+				"initia",
+				"initializeString"
+			],
+			[
+				"erro",
+				"error_aux"
+			],
+			[
+				"index",
+				"indexOf"
+			],
+			[
+				"str",
+				"str_index"
+			],
+			[
+				"colo",
+				"color_seleccionado\tproperty"
+			],
+			[
+				"boolean",
+				"boolean\tkeyword"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"style",
+				"styleUrls\tproperty"
+			],
+			[
+				"d",
+				"deleteTodos"
+			],
+			[
+				"cre",
+				"creatorField"
+			],
+			[
+				"To",
+				"TodoActions"
+			],
+			[
+				"pro",
+				"props"
+			],
+			[
+				"st",
+				"setState"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/app.js",
+			"settings":
+			{
+				"buffer_size": 1620,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 2977,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/typeNumber.js",
+			"settings":
+			{
+				"buffer_size": 2131,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/typeString.js",
+			"settings":
+			{
+				"buffer_size": 3553,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/basicCheck.js",
+			"settings":
+			{
+				"buffer_size": 3280,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/typeObject.js",
+			"settings":
+			{
+				"buffer_size": 2198,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/typeArray.js",
+			"settings":
+			{
+				"buffer_size": 4209,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/logicDoors.js",
+			"settings":
+			{
+				"buffer_size": 4517,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/base.js",
+			"settings":
+			{
+				"buffer_size": 6661,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "pack",
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"snipp",
+				"Snippet: Anonymous Function"
+			],
+			[
+				"snip",
+				"Snippet: html"
+			],
+			[
+				"markd",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"synt",
+				"Set Syntax: Markdown"
+			],
+			[
+				"syntax se",
+				"Preferences: Settings – Syntax Specific"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package ins",
+				"Package Control: Install Package"
+			],
+			[
+				"abel",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"b",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"sintax",
+				"Preferences: Settings – Syntax Specific"
+			],
+			[
+				"bABEL",
+				"Preferences: Babel – Default"
+			],
+			[
+				"babe",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"md",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"twig",
+				"Set Syntax: HTML (Twig)"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/media/patricio/disk2/valuator/client/src/client.min.js",
+		"/media/patricio/disk2/valuator/server/src/validate.js",
+		"/media/patricio/disk2/valuator/server/src/restifytes.js",
+		"/media/patricio/disk2/valuator/proyecto.md",
+		"/media/patricio/disk2/valuator/server/data/config.js",
+		"/media/patricio/disk2/valuator/server/neotest.js",
+		"/media/patricio/disk2/valuator/models/user.schema.js",
+		"/media/patricio/disk2/valuator/server/src/user.js",
+		"/media/patricio/disk2/valuator/server/src/controllers.js",
+		"/media/patricio/disk2/valuator/server/src/authorize.js",
+		"/media/patricio/disk2/valuator/server/src/routes.js",
+		"/media/patricio/disk2/valuator/server/app.js",
+		"/media/patricio/disk2/learn-ionic/ionic3-proj2/src/pages/quotes/quotes.scss",
+		"/media/patricio/disk2/learn-ionic/ionic3-proj2/src/app/app.module.ts",
+		"/media/patricio/disk2/learn-ionic/ionic3-proj2/src/app/app.component.ts",
+		"/media/patricio/disk2/learn-ionic/ionic3-basics/src/pages/users/users.ts",
+		"/media/patricio/disk2/learn-ionic/ionic3-basics/src/pages/buyout/buyout.html",
+		"/media/patricio/disk2/learn-ionic/ionic3-basics/src/pages/buyout/buyout.ts",
+		"/media/patricio/disk2/learn-ionic/ionic3-basics/src/pages/shop/shop.html",
+		"/media/patricio/disk2/learn-ionic/ionic3-basics/src/pages/shop/shop.ts",
+		"/media/patricio/disk2/learn-ionic/ionic3-basics/src/pages/users/user/user.html",
+		"/media/patricio/disk2/learn-ionic/ionic3-basics/src/pages/users/user/user.ts",
+		"/media/patricio/disk2/learn-ionic/ionic3-basics/src/pages/home/home.ts",
+		"/media/patricio/disk2/learn-ionic/ionic3-basics/src/pages/home/home.html",
+		"/media/patricio/disk2/learn-ionic/ionic3-basics/src/pages/users/users.html",
+		"/media/patricio/disk2/learn-ionic/ionic3-basics/src/app/app.module.ts",
+		"/media/patricio/disk2/p-comps/app/core/fieldTypes.js",
+		"/media/patricio/disk2/p-comps/ideas/plantilla-ej.html",
+		"/media/patricio/disk2/p-comps/ideas/plantilla-ej02.html",
+		"/media/patricio/disk2/p-comps/app/json-rich.js",
+		"/media/patricio/disk2/p-comps/ideas/armado.md",
+		"/media/patricio/disk2/p-comps/app/directiveIf.js",
+		"/media/patricio/disk2/p-comps/app/directives/bind.js",
+		"/media/patricio/disk2/p-comps/app/directives/repeat.js",
+		"/media/patricio/disk2/p-comps/app/directives/target.js",
+		"/media/patricio/disk2/p-comps/app/core/README.md",
+		"/media/patricio/disk2/p-comps/app/directives/condition.js",
+		"/media/patricio/disk2/p-comps/ideas/example.json",
+		"/media/patricio/disk2/p-comps/toObservable.js",
+		"/media/patricio/disk2/p-comps/app/jsos.js",
+		"/media/patricio/disk2/curso-angular4/src/app/app.component.html",
+		"/media/patricio/disk2/curso-angular4/src/app/empleado/empleado.component.html",
+		"/media/patricio/disk2/curso-angular4/src/index.html",
+		"/media/patricio/disk2/curso-angular4/src/assets/styles.css",
+		"/media/patricio/disk2/curso-angular4/src/app/empleado/empleado.component.ts",
+		"/media/patricio/disk2/curso-angular4/src/app/app.module.ts",
+		"/media/patricio/disk2/curso-angular4/src/app/empleado/empleado.ts",
+		"/media/patricio/disk2/curso-angular4/src/app/fruta/fruta.component.ts",
+		"/home/patricio/containers/learn-angular/src/app/dashboard.component.html",
+		"/home/patricio/containers/learn-angular/src/app/heroes.component.html",
+		"/home/patricio/containers/learn-angular/src/app/hero-detail.component.html",
+		"/home/patricio/containers/learn-angular/src/app/hero.ts",
+		"/home/patricio/containers/learn-angular/src/app/heroes.component.css",
+		"/home/patricio/containers/learn-angular/src/app/dashboard.component.css",
+		"/home/patricio/containers/learn-angular/src/app/app.component.css",
+		"/home/patricio/containers/learn-angular/src/app/hero-detail.component.css",
+		"/home/patricio/containers/learn-angular/src/app/mock-heroes.ts",
+		"/home/patricio/containers/react-js-tutorials/5-redux-react/src/js/client.js",
+		"/home/patricio/containers/react-js-tutorials/3-flux/src/js/components/Todo.js",
+		"/home/patricio/containers/react-js-tutorials/3-flux/src/js/pages/Todos.js",
+		"/home/patricio/.config/sublime-text-3/Packages/Babel/Babel.sublime-settings",
+		"/home/patricio/containers/react-js-tutorials/3-flux/src/index.html",
+		"/home/patricio/containers/react-js-tutorials/3-flux/src/js/stores/TodoStore.js",
+		"/home/patricio/containers/react-js-tutorials/3-flux/src/js/actions/TodoActions.js",
+		"/home/patricio/containers/react-js-tutorials/3-flux/src/js/client.js",
+		"/home/patricio/containers/react-js-tutorials/3-flux/src/css/styles.css",
+		"/home/patricio/containers/react-js-tutorials/2-react-router/src/js/client.js",
+		"/home/patricio/containers/react-js-tutorials/2-react-router/src/js/pages/Archives.js",
+		"/home/patricio/containers/react-js-tutorials/2-react-router/src/js/components/layout/Nav.js",
+		"/home/patricio/containers/react-js-tutorials/2-react-router/src/js/pages/Featured.js",
+		"/home/patricio/containers/react-js-tutorials/2-react-router/src/js/pages/Layout.js",
+		"/home/patricio/containers/react-js-tutorials/2-react-router/src/index.html",
+		"/home/patricio/.config/sublime-text-3/Packages/User/Babel.sublime-settings",
+		"/home/patricio/containers/react-js-tutorials/1-basic-react/package.json",
+		"/home/patricio/containers/react-js-tutorials/1-basic-react/src/js/components/Header/Title.js",
+		"/home/patricio/containers/react-js-tutorials/1-basic-react/src/js/components/Header.js",
+		"/home/patricio/containers/react-js-tutorials/1-basic-react/src/js/components/Footer.js",
+		"/home/patricio/containers/react-js-tutorials/1-basic-react/src/js/components/Layout.js",
+		"/home/patricio/containers/react-js-tutorials/1-basic-react/src/js/client.js",
+		"/home/patricio/containers/react-js-tutorials/1-basic-react/src/index.html",
+		"/home/patricio/containers/react-tutorial/1-basic-react/src/index.html",
+		"/home/patricio/containers/react-tutorial/1-basic-react/webpack.config.js",
+		"/home/patricio/containers/react-tutorial/package.json",
+		"/opt/lampp/htdocs/learn-drupal/themes/custom/endymion/sass/style.scss",
+		"/opt/lampp/htdocs/learn-drupal/package.json",
+		"/opt/lampp/htdocs/learn-drupal/themes/custom/endymion/endymion.info.yml",
+		"/opt/lampp/htdocs/learn-drupal/themes/custom/endymion/templates/block/block--system-branding-block.html.twig",
+		"/opt/lampp/htdocs/learn-drupal/themes/custom/endymion/sass/_header.scss",
+		"/opt/lampp/htdocs/learn-drupal/themes/custom/endymion/partials/header.html.twig",
+		"/opt/lampp/htdocs/learn-drupal/sites/default/settings.local.php",
+		"/opt/lampp/htdocs/learn-drupal/sites/development.services.yml",
+		"/opt/lampp/htdocs/learn-drupal/sites/default/services.yml",
+		"/opt/lampp/htdocs/learn-drupal/sites/default/settings.php",
+		"/home/patricio/containers/drupal/Dockerfile",
+		"/home/patricio/containers/drupal/docker-compose.yml"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"/home/patricio/containers/react-js-tutorials/5-redux-react/src/js",
+			"/home/patricio/containers/react-js-tutorials/2-react-router/src",
+			"/opt/lampp/htdocs/learn-drupal/themes/custom/endymion/templates"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Jschema",
+			"witnes",
+			"uniqueItems",
+			"literal",
+			"store.dispatch",
+			"bootstrap",
+			"multiple",
+			"is_multiple",
+			"loggi"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Scheson"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1620,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 405.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2977,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								388,
+								388
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 30.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/typeNumber.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2131,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 315.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/typeString.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3553,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/basicCheck.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3280,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 675.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/typeObject.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2198,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 450.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/typeArray.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4209,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3722,
+								3729
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1837.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/logicDoors.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4517,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1494.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/base.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6661,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Jschema.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 401.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

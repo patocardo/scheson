@@ -1,0 +1,40 @@
+{
+  "name": "Scheson",
+  "version": "0.0.1",
+  "description": "json validation through json-schemas using javascript",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha-webpack --webpack-config webpack.config-test.js \"test/*.test.js\"",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "dev": "webpack-watch-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patocardo/schema-validator.git"
+  },
+  "keywords": [
+    "json",
+    "schema",
+    "javascript",
+    "nodejs",
+    "validation"
+  ],
+  "author": "Patricio Cardó",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patocardo/schema-validator/issues"
+  },
+  "homepage": "https://github.com/patocardo/schema-validator#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^4.0.0",
+    "mocha-webpack": "^1.0.0-rc.1",
+    "webpack": "^3.6.0",
+    "webpack-node-externals": "^1.6.0",
+    "webpack-watch-server": "^1.2.1"
+  },
+  "directories": {
+    "test": "test"
+  }
+}
