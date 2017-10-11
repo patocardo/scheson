@@ -1,4 +1,4 @@
-# schema-validator
+# Scheson [in progress]
 
 An attempt to have a general json validation over normalized schemas.
 
@@ -35,7 +35,6 @@ If json was not valid, the `validation.failure` object will report how the json 
 {
 	born: {
 		date: 'bad date format',
-		place: 'required'
 	},
 	email: 'bad email format',
 }
@@ -94,18 +93,19 @@ To use additions and hooks, read the documentation on how the *validationFunctio
 
 ## To Do
 
-### Now
-- probar con jasmine o con yarn, a ver si el problema de webpack persiste
-- configure .gitignore
-- improve testing structure
+### First release
 - describe each src/*.js
 - add to npm repo
+- enlarge and improve documentation
+- enlarge and improve unit tests
+- integrate linter and test with 'webpackaging'
 
-### Further
-- async variant for remote sources
-- enable `$ref` as schema linker
-- enable inner cross restrictions. Ex. *number.minimum <= number.maximum*
-- allow translations
+### Future versions and extensions
+- Asynchrone mode:
+	- allow loading jsons from Browsers and NodeJs (maybe depending on externals)
+	- enable `$ref` as schema linker
+- Enable inner cross restrictions. Ex. *number.minimum <= number.maximum*
+- Work translations and other i18n (check on standards)
 - create type extensions (separate project) for:
 	+ date
 	+ duration

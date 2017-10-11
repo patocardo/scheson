@@ -22,7 +22,6 @@
 			xhr.overrideMimeType("application/json");
 		  xhr.onload = function() {
 	      if (xhr.readyState === 4) {
-	      	console.log('readyState.DONE');
 	        if (xhr.status === 200) {
 	        	try {
 	        		callback(Scheson.jType.parseString(xhr.response));	        		
@@ -33,9 +32,6 @@
 	        } else {
 	          console.error(xhr.statusText + ' at ' + url);
 	        }
-	      }
-	      else {
-	      	console.log('readyState.nonDONE');
 	      }
 	    };
 	    xhr.open('GET', url, true);
@@ -57,16 +53,16 @@
 		];
 		const bads = [
 			{
-				json:	'./object-two_props.good1.json',
-				schema: './array-anglo_names.schema.json'
+				json:	'./object/object-two_props.good1.json',
+				schema: './array/array-anglo_names.schema.json'
 			},
 			{
-				json:	'./array-anglo_names.bad1.json',
-				schema: './array-anglo_names.schema.json'
+				json:	'./array/array-anglo_names.bad1.json',
+				schema: './array/array-anglo_names.schema.json'
 			},
 			{
-				json:	'./array-anglo_names.good1.json',
-				schema: './array-defined_items_opened.schema.json'
+				json:	'./array/array-anglo_names.good1.json',
+				schema: './array/array-defined_items_opened.schema.json'
 			},
 		];
 
@@ -86,7 +82,13 @@
 		goods.forEach(function (item) {
 			getJSON(item.schema, function(schema) {
 				getJSON(item.json, function(json) {
-					console.log('json:', json, 'schema:', schema);
+					doValidate(json, schema, item.json, item.schema);
+				});
+			});
+		})
+		bads.forEach(function (item) {
+			getJSON(item.schema, function(schema) {
+				getJSON(item.json, function(json) {
 					doValidate(json, schema, item.json, item.schema);
 				});
 			});
