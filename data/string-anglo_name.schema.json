@@ -1,6 +1,0 @@
-{
-	"type": "string",
-	"minLength": 3,
-	"maxLength": 64,
-	"patterns": "[A-Z]'?[a-z]+( [A-Z]'?[a-z]+)+" 
-}

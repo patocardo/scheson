@@ -47,10 +47,10 @@ const schemaString = {
  */
 function patternTest(value, patt) {
   const rtrn = { valid: true, failures: []};
-  if(varType(patt, 'string')) {
+  if(varType.is(patt, 'string')) {
     patt = new RegExp(patt);
   }
-  if (varType(patt, 'regexp')) {
+  if (varType.is(patt, 'regexp')) {
     if (!patt.test(value)) {
       rtrn.valid = false;
       rtrn.failures.push('the text must fit the pattern at schema');							

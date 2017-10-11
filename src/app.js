@@ -61,6 +61,12 @@ Scheson.pushSuperSchema('root', {
   required: ['id', 'type']
 });
 
+/*function schesonClass() {
+}
+schesonClass.prototype.types = Scheson.types;
+
+module.exports = schesonClass;
+*/
 export const types = Scheson.types, 
   superSchemas = Scheson.superSchemas, 
   getStringFormats = function () {

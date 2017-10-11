@@ -11,7 +11,7 @@
 	</style>
 </head>
 <body>
-	<h1>Testing environment</h1>
+	<h1>Manual Testing environment</h1>
 	<div class="out">
 		
 	</div>
@@ -22,16 +22,20 @@
 			xhr.overrideMimeType("application/json");
 		  xhr.onload = function() {
 	      if (xhr.readyState === 4) {
+	      	console.log('readyState.DONE');
 	        if (xhr.status === 200) {
 	        	try {
 	        		callback(Scheson.jType.parseString(xhr.response));	        		
 	        	}
 	        	catch(e) {
-	        		console.error(e, xhr.response);
+	        		console.error('error', e, xhr.response);
 	        	}
 	        } else {
 	          console.error(xhr.statusText + ' at ' + url);
 	        }
+	      }
+	      else {
+	      	console.log('readyState.nonDONE');
 	      }
 	    };
 	    xhr.open('GET', url, true);
@@ -43,12 +47,12 @@
 
 		const goods = [
 			{ 
-				json:	'./object-two_props.good1.json',
-				schema: './object-two_props.schema.json'
+				json:	'./object/object-two_props.good1.json',
+				schema: './object/object-two_props.schema.json'
 			},
 			{
-				json:	'./string-anglo_name.good1.json',
-				schema: './string-anglo_name.schema.json'
+				json:	'./string/string-anglo_name.good1.json',
+				schema: './string/string-anglo_name.schema.json'
 			}
 		];
 		const bads = [
@@ -86,8 +90,6 @@
 					doValidate(json, schema, item.json, item.schema);
 				});
 			});
-			let both = null;
-
 		})
 	</script>
 </body>

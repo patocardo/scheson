@@ -1,4 +1,5 @@
 {
+	"id": "anglo-names",
 	"type": "string",
 	"minLength": 3,
 	"maxLength": 64,
