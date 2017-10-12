@@ -4,7 +4,7 @@
   "description": "json validation through json-schemas using javascript",
   "main": "app.js",
   "scripts": {
-    "test": "jasmine",
+    "test": "mocha",
     "build": "webpack",
     "watch": "webpack --watch",
     "dev": "webpack-watch-server"
@@ -28,7 +28,8 @@
   "homepage": "https://github.com/patocardo/scheson#readme",
   "dependencies": {},
   "devDependencies": {
-    "jasmine": "^2.8.0",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
     "webpack": "^3.6.0",
     "webpack-node-externals": "^1.6.0",
     "webpack-watch-server": "^1.2.1"
