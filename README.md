@@ -18,23 +18,28 @@ Among the utilities[1] that JSON-schema can have, *validation* of incoming json 
 
 ## Usage
 + To check validity of a value againsta an schema
-> use `const validation = Scheson.check(js_ob, schema);`, 
+> use `const validation = Scheson.check(js_ob, schema);`
+>
 > where `js_ob` is the value to check, and `schema` is the object with the standards. 
 > `validation.valid` will be *true* if everything is ok, or *false* otherwise
-> For more information read [Check documentation](https://github.com/patocardo/scheson/docs/check.md);
+>
+> For more information read [Check documentation](https://github.com/patocardo/scheson/blob/master/docs/check.md);
 
 + To add or change a validation for certain type
 > `Scheson.pushTypeValidator('type_name', 'validationName', validationFunction [, force])`;
-> For more information read [pushTypeValidator documentation](https://github.com/patocardo/scheson/docs/pushtypevalidator.md);
+>
+> For more information read [pushTypeValidator documentation](https://github.com/patocardo/scheson/blob/master/docs/pushtypevalidator.md);
 
 + To add or change an entire basic type
 > `Scheson.pushType('type_name', validationFunction[, superSchemaType [, force]])`;
-> For more information read [pushType documentation](https://github.com/patocardo/scheson/docs/pushtype.md);
+>
+> For more information read [pushType documentation](https://github.com/patocardo/scheson/blob/master/docs/pushtype.md);
 
 
 + To add or change a string format
 > `Scheson.pushStringFormat('format_name', validationFunction[, force]);`
-> For more information read [pushStringFormat documentation](https://github.com/patocardo/scheson/docs/pushstringformat.md);
+>
+> For more information read [pushStringFormat documentation](https://github.com/patocardo/scheson/blob/master/docs/pushstringformat.md);
 
 
 ## To Do
