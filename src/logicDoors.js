@@ -35,7 +35,6 @@ function hasLogicDoors(schema) {
  * @return {[type]}            [description]
  */
 function logicDoors(value, schema, callback) {
-  console.log('logicDoors');
   const rtrn = {valid: true, failures: []};
 
   // OR

@@ -72,7 +72,8 @@ export const types = Scheson.types,
   getStringFormats = function () {
     return Scheson.stringFormats;
   },
-  pushType = Scheson.pushType, 
+  pushType = Scheson.pushType,
+  pushTypeValidator = Scheson.pushTypeValidator,
   pushSuperSchema = Scheson.pushSuperSchema, 
   pushStringFormat = Scheson.pushStringFormat,
   check = Scheson.check,

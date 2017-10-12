@@ -12,93 +12,39 @@ Among the utilities[1] that JSON-schema can have, *validation* of incoming json 
 
 ## Installation
 
-## Usage
 1. Download */dist/scheson.js*
-2. In your code check with `const validation = Scheson.check(js_ob, schema);`, 
-where `js_ob` is the value to check, and `schema` is the object with the standards
+2. Include in your HTML with `<script>` at HTML or with `require(path_to_scheson).Scheson` in Node scripts
 
-`validation.valid` will be *true* if everything is ok, or *false* otherwise
 
-If json was not valid, the `validation.failure` object will report how the json has failed. See the following example:
-**Incoming value**
-```
-{
-	name: 'Manuel Belgrano',
-	born: {
-		date: '3_6_1770',
-	}
-	email: 'didn\'t have'
-}
-```
-**validation failure**
-```
-{
-	born: {
-		date: 'bad date format',
-	},
-	email: 'bad email format',
-}
-```
-Schemas should be error-free in order to check the passed value. But as we allways do mistake with schemas, you can use the third argument as follows:
+## Usage
++ To check validity of a value againsta an schema
+> use `const validation = Scheson.check(js_ob, schema);`, 
+> where `js_ob` is the value to check, and `schema` is the object with the standards. 
+> `validation.valid` will be *true* if everything is ok, or *false* otherwise
+> For more information read [Check documentation](https://github.com/patocardo/scheson/docs/check.md);
 
-`const validation = Scheson.check(js_ob, schema, true);`
++ To add or change a validation for certain type
+> `Scheson.pushTypeValidator('type_name', 'validationName', validationFunction [, force])`;
+> For more information read [pushTypeValidator documentation](https://github.com/patocardo/scheson/docs/pushtypevalidator.md);
 
-This will ask the validator to check if the json-schema is well formed, before check the value itself. This specification is usefult either for development stage and for external/dynamic schemas.
++ To add or change an entire basic type
+> `Scheson.pushType('type_name', validationFunction[, superSchemaType [, force]])`;
+> For more information read [pushType documentation](https://github.com/patocardo/scheson/docs/pushtype.md);
 
-So, if the schema is wrong, the `validation.errors` object will report how the json has failed. See the following example:
-** Incoming Json-schema **
-```
-{
-	"id": "eminence",
-	"type": "object",
-	"properties": {
-		"name": {
-			"type": "string"
-		},
-		"born": {
-			"type": "object",
-			"properties": {
-				"date": {
-					"type": "string",
-					"format": "date-time"
-				},
-				"place": "string"
-			}
-			"required": ["date", "place"]
-		}
-	}
-}
-```
-**validation errors**
-```
-{
-	properties: {
-		born: {
-			properties: {
-				place: 'bad type, it should be object'
-			}
-		}
-	}
-}
-```
-**Scheson** also support extensions and modifications
 
-```
-Scheson.pushType('type_name', validationFunction[, superSchemaType [, force]]);
-Scheson.pushStringFormat('format_name', validationFunction[, force])
-Scheson.pushStringFormat('format_name', validationFunction[, force])
-```
++ To add or change a string format
+> `Scheson.pushStringFormat('format_name', validationFunction[, force]);`
+> For more information read [pushStringFormat documentation](https://github.com/patocardo/scheson/docs/pushstringformat.md);
 
-To use additions and hooks, read the documentation on how the *validationFunctions* should be either for Type and Formats
 
 ## To Do
 
 ### First release
 - describe each src/*.js
-- add to npm repo
 - enlarge and improve documentation
 - enlarge and improve unit tests
 - integrate linter and test with 'webpackaging'
+- add to npm repo
 
 ### Future versions and extensions
 - Asynchrone mode:

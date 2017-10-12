@@ -88,7 +88,7 @@ Object.defineProperties(Scheson, {
     value: function(typeName, obj/*, superSchema, force*/) {
       const force = arguments.length > 3 ? arguments[3] : null;
       let rtrn = true;
-      if ( Scheson.types.hasOwnProperty[typeName] && !force) {
+      if ( Scheson.types.hasOwnProperty(typeName) && !force) {
         throw new Error( typeName + ' already exists, try with the force parameter to overwrite it');
       }
       if( !varType.is(typeName, 'string') || !varType.is(obj, 'object')) {
@@ -115,14 +115,17 @@ Object.defineProperties(Scheson, {
     value: function(typeName, validatorName, fn/*, force*/) {
       const force = arguments.length > 3 ? arguments[3] : null;
       let rtrn = true;
-      if ( !Scheson.types.hasOwnProperty[typeName]) {
+      if ( !Scheson.types.hasOwnProperty(typeName)) {
         throw new Error( typeName + ' doesn\'t exists, add it first with pushType');
       }
-      if ( Scheson.types[typeName].hasOwnProperty[validatorName] && !force) {
+      if ( Scheson.types[typeName].hasOwnProperty(validatorName) && !force) {
         throw new Error( validatorName + ' already exists, try with the force parameter to overwrite it');
       }
       if( !varType.is(validatorName, 'string') || !varType.is(fn, 'function')) {
         throw new TypeError('bad types at Scheson.pushTypeValidator');
+      }
+      if( fn.length !== 2 ) {
+        throw new TypeError('fn should have 2 arguments at Scheson.pushTypeValidator(typeName, validatorName, fn)');
       }
 
       Object.defineProperty(Scheson.types[typeName], validatorName, {
@@ -138,7 +141,7 @@ Object.defineProperties(Scheson, {
     enumerable: true,
     value: function(formatName, fn/*, force*/) {
       const force = arguments.length > 2 ? arguments[2] : null;
-      if ( Scheson.stringFormats.hasOwnProperty[formatName] && !force) {
+      if ( Scheson.stringFormats.hasOwnProperty(formatName) && !force) {
         throw new Error( formatName + ' already exists, try with the force parameter to overwrite it');
       }
       if( !varType.is(formatName, 'string') || !varType.is(fn, 'function')) {
@@ -158,7 +161,7 @@ Object.defineProperties(Scheson, {
     enumerable: true,
     value: function(typeName, obj/*, force*/) {
       const force = arguments.length > 2 ? arguments[2] : null;
-      if ( Scheson.superSchemas.hasOwnProperty[typeName] && !force) {
+      if ( Scheson.superSchemas.hasOwnProperty(typeName) && !force) {
         throw new Error( typeName + ' already exists, try with the force parameter to overwrite it');
       }
       if( !varType.is(typeName, 'string') || !varType.is(obj, 'object')) {
@@ -180,9 +183,7 @@ Object.defineProperties(Scheson, {
     value: function(value, schema, checkSchema) {
       const rtrn = { valid:true, failures:{}, errors: {}};
       if (checkSchema) {
-        // console.log('checkSchema');
         const getRtrn = Scheson.check(schema, Scheson.superSchemas.root);
-        console.log('schema:', schema, 'superschema:', Scheson.superSchemas.root);
         rtrn.valid = getRtrn.valid;
         rtrn.errors = getRtrn.failures;
       }

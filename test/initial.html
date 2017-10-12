@@ -94,5 +94,46 @@
 			});
 		})
 	</script>
+	<script type="text/javascript">
+		/* Test pushTypeValidator method */
+		Scheson.pushTypeValidator('number', 'inRanges', function(value, schema) {
+			const rtrn = { valid: true, failures: { self:[], children: {}} };
+			if ( schema.hasOwnProperty('inRanges') && Scheson.jType.is(schema.inRanges, 'array')) {
+				const inside = schema.inRanges.some( function(range) {
+					if (
+						Scheson.jType.is(range, 'array') 
+						&& range.length === 2 
+						&& Scheson.jType.is(range[0], 'number')
+						&& Scheson.jType.is(range[1], 'number')
+						&& range[0] <= range[1]
+					){
+						if (value >= range[0] && value <= range[1]) {
+							console.log( value + ' entre ' + range[0] + ' y ' + range[1]);
+							return true;							
+						}
+					}
+					else {
+						console.error('inRange property should be an array of arrays of two numbers, and the second number must be greater or equal than the first');
+					}
+					return false;
+				});
+				if (!inside) {
+			    rtrn.valid = false;
+			    rtrn.failures.self.push('number is outside allowed ranges (' + JSON.stringify(schema.inRanges) + ')');
+				}
+			}
+			return rtrn;
+		});
+
+		const schemaWithRange = {
+			id: 'numberInRange',
+			type: 'number',
+			inRanges: [[-20, -10], [0, 10], [20, 30]]
+		}
+
+		console.log('7 is:', Scheson.check(7, schemaWithRange));
+		console.log('12 is:', Scheson.check(12, schemaWithRange));
+
+	</script>
 </body>
 </html>
