@@ -49,12 +49,16 @@ Among the utilities[1] that JSON-schema can have, *validation* of incoming json 
 - enlarge and improve documentation
 - enlarge and improve unit tests
 - integrate linter and test with 'webpackaging'
-- add to npm repo
+- webpack minification
+- code coverage in tests
+- create a validation object cleaner
+- add to npm repository
 
 ### Future versions and extensions
 - Asynchrone mode:
 	- allow loading jsons from Browsers and NodeJs (maybe depending on externals)
 	- enable `$ref` as schema linker
+- Fit to json-schema v06
 - Enable inner cross restrictions. Ex. *number.minimum <= number.maximum*
 - Work translations and other i18n (check on standards)
 - create type extensions (separate project) for:

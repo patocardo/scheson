@@ -35,44 +35,45 @@ function hasLogicDoors(schema) {
  * @return {[type]}            [description]
  */
 function logicDoors(value, schema, callback) {
-  const rtrn = {valid: true, failures: []};
+  const rtrn = {valid: true, failures: {self:[], children:{}}};
 
   // OR
   if ( definedTypeValue(schema, 'anyOf', 'array') ) {
-    rtrn.valid = schema.anyOf.some(function(item, idx) {
+    const tempFailures = [];
+    rtrn.valid = schema.anyOf.some(function(item) {
       const getRtrn = (hasLogicDoors(item)) 
         ? logicDoors(value, item, callback)
-        : callback(value, item, idx);
-
-      Array.prototype.push.apply(rtrn.failures, getRtrn.failures);
+        : callback(value, item);
 
       if (getRtrn.valid) {
         return true;
       }
+      Array.prototype.push.apply(tempFailures, getRtrn.failures.self);
+
       return false;
     });
 
     if(!rtrn.valid){
-      rtrn.failures.push('At least one criterion should match');
+      Array.prototype.push.apply(rtrn.failures.self, tempFailures);
+      rtrn.failures.self.push('At least one criterion should match');
     }
   }
 
   // AND
   if ( rtrn.valid && definedTypeValue(schema, 'allOf', 'array') ) {
-    rtrn.valid = !schema.anyOf.some(function(item, idx) {
+    rtrn.valid = schema.anyOf.every(function(item, idx) {
       const getRtrn = (hasLogicDoors(item)) 
         ? logicDoors(value, item, callback)
         : callback(value, item, idx);
 
-      Array.prototype.push.apply(rtrn.failures, getRtrn.failures);
-
-      if (getRtrn.valid) {
+      if (!getRtrn.valid) {
         return false;
+        Array.prototype.push.apply(rtrn.failures.self, getRtrn.failures.self);
       }
       return true;
     });
     if(!rtrn.valid){
-      rtrn.failures.push('All criteria should match');
+      rtrn.failures.self.push('All criteria should match');
     }
   }
 
@@ -83,15 +84,14 @@ function logicDoors(value, schema, callback) {
         ? logicDoors(value, item, callback)
         : callback(value, item, idx);
 
-      Array.prototype.push.apply(rtrn.failures, getRtrn.failures);
-
       if (getRtrn.valid) {
         return true;
+        Array.prototype.push.apply(rtrn.failures.self, getRtrn.failures.self);
       }
       return false;
     });
     if(!rtrn.valid){
-      rtrn.failures.push('None of criteria should match');
+      rtrn.failures.self.push('None of criteria should match');
     }
   }
 
@@ -112,7 +112,7 @@ function logicDoors(value, schema, callback) {
       rtrn.valid = true;
     }
     else {
-      rtrn.failures.push('Only one criterion should match');			
+      rtrn.failures.self.push('Only one criterion should match');			
     }
   }
 	
@@ -124,20 +124,19 @@ function logicDoors(value, schema, callback) {
     const minimum = definedTypeValue(schema.nOf, 'minimum', 'number') ? schema.nOf.minimum : 0;
     const maximum = definedTypeValue(schema.nOf, 'maximum', 'number') ? schema.nOf.maximum : schema.nOf.list.length;
     let counterTrue = 0;
-    schema.anyOf.list.forEach(function(item, idx) {
+    schema.nOf.list.forEach(function(item, idx) {
       const getRtrn = (hasLogicDoors(item)) 
         ? logicDoors(value, item, callback)
         : callback(value, item, idx);
       if (getRtrn.valid) {
         counterTrue++;
       }
-      rtrn.errors = rtrn.errors.concat(getRtrn.errors);			
     });
     if (counterTrue >= minimum && counterTrue <= maximum) {
       rtrn.valid = true;
     }
     else {
-      rtrn.failures.push('Criteria to match must between ' + minimum + ' and ' + maximum);			
+      rtrn.failures.self.push('Criteria to match must be between ' + minimum + ' and ' + maximum);			
     }
 
   }

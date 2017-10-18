@@ -1,4 +1,5 @@
 {
+	"id": "object-anyof",
 	"type": "object",
 	"properties": {
 		"name": {
@@ -25,5 +26,6 @@
 		"age": {
 			"type": "number"
 		}
-	}
+	},
+	"required": ["name"]
 }

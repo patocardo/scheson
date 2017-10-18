@@ -7,7 +7,7 @@ function appendChildFailures(childrenObj, key, failures) {
   if ( !childrenObj.hasOwnProperty(key)) {
     childrenObj[key] = { self: [], children: {}};
   }
-  Array.prototype.push.apply(childrenObj[key].failures.self, failures.self);
+  Array.prototype.push.apply(childrenObj[key].self, failures.self);
   if (Object.keys(failures.children).length > 0) {
     Object.keys(failures.children).forEach( function (childKey) {
       failures.children = appendChildFailures(failures.children, childKey, failures.children);
@@ -196,6 +196,17 @@ Object.defineProperties(Scheson, {
         rtrn.failures = getRtrn.failures;
       }
       return rtrn;
+    }
+  },
+
+  validObjectCleaner: {
+    enumerable: true,
+    value: function(validObj) {
+      if( !varType.is(validOb, 'object')) {
+        console.error('validObj must be an object');
+        return false;
+      }
+      // TODO: walk the object tree and clean empty parts 
     }
   }
 });

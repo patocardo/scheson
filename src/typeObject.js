@@ -66,8 +66,9 @@ const typeObject = {
             : Scheson.check(value[key], schema.properties[key]);
 
           if(!getRtrn.valid){
+            
             rtrn.valid = getRtrn.valid;
-            rtrn.failures.children = appendChildFailures(rtrn.children, key, getRtrn.failures);
+            rtrn.failures.children = appendChildFailures(rtrn.failures.children, key, getRtrn.failures);              
           }
         }
       });

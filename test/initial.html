@@ -45,8 +45,16 @@
 			{ 
 				json:	'./object/object-two_props.good1.json',
 				schema: './object/object-two_props.schema.json'
-			},
-			{
+			}
+			,{ 
+			  json: './object/object-person-anyof.good1.json',
+			  schema: './object/object-person-anyof.schema.json'
+			}
+			,{ 
+			  json: './object/object-person-anyof.good2.json',
+			  schema: './object/object-person-anyof.schema.json'
+			}
+			,{
 				json:	'./string/string-anglo_name.good1.json',
 				schema: './string/string-anglo_name.schema.json'
 			}
@@ -55,15 +63,15 @@
 			{
 				json:	'./object/object-two_props.good1.json',
 				schema: './array/array-anglo_names.schema.json'
-			},
-			{
+			}
+			,{
 				json:	'./array/array-anglo_names.bad1.json',
 				schema: './array/array-anglo_names.schema.json'
-			},
-			{
+			}
+			,{
 				json:	'./array/array-anglo_names.good1.json',
 				schema: './array/array-defined_items_opened.schema.json'
-			},
+			}
 		];
 
 		function doValidate(json, schema, jsonUrl, schemaUrl) {

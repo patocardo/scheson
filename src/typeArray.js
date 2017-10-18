@@ -136,7 +136,7 @@ const typeArray = {
       if ( rtrn.valid ){
         rtrn.valid = getRtrn.valid;
       }
-      rtrn.failures.children = appendChildFailures(rtrn.failures.children, idx, getRtrn.failures);				
+      rtrn.failures.children = appendChildFailures(rtrn.failures.children, key, getRtrn.failures);              
     });
     return rtrn;
   }
